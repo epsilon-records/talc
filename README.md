@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Talc](screenshot.png)
 
-Talc is a clean-room design with the feature set of FabFilter Pro-DS, FabFilter's twelfth plugin (October 2012). It was written from scratch, working only from FabFilter's public release announcement and contemporary news coverage. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Talc is a de-esser. It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
@@ -77,24 +77,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Talc*
 
 ![Help](screenshot-help.png)
 
-### Compared with FabFilter Pro-DS (2012)
-
-| Pro-DS | Talc |
-|---|---|
-| Single Vocal detection and Allround mode | ✓ |
-| Transparent, program-dependent compression/limiting | ✓ |
-| Wide band, or linear-phase split band | ✓ |
-| Threshold and range | ✓ |
-| Adjustable side-chain high-pass and low-pass, with a real-time spectrum analyzer | ✓ draggable band over a live spectrum, plus audition |
-| Optional mid-only or side-only processing; adjustable stereo linking | ✓ |
-| Look-ahead up to 15 ms | ✓ |
-| Up to 4× linear-phase oversampling | ✓ |
-| Scrolling waveform that highlights the processed sections | ✓ with gain-reduction line |
-| Circular side-chain level meter around the threshold knob | ✓ |
-| Large and compact interface sizes | Freely resizable |
-| Double-click value entry, MIDI Learn, undo/redo, A/B, smooth parameter changes, help with interactive hints | ✓ hover tips, help pages and full manual |
-| Stereo and mono versions | One stereo plugin; use it on mono tracks as usual |
-| Pro Tools (RTAS/AAX/AudioSuite) | Not supported (needs Avid's SDK and signing) |
+Not supported: Pro Tools (AAX/AudioSuite).
 
 ## Build from source
 
@@ -147,5 +130,3 @@ Release checks:
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Talc/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Pro-DS" are trademarks of FabFilter Software Instruments. Talc is not affiliated with or endorsed by FabFilter.
